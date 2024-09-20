@@ -1,3 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=IBM+Plex+Mono&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#1F1E1E] text-white;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.glow {
+  filter: drop-shadow(0 0 2px rgba(204, 0, 0, 0.8));
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 2px rgba(204, 0, 0, 0.8));
+  }
+  to {
+    filter: drop-shadow(0 0 4px rgba(204, 0, 0, 1));
+  }
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e2424;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
+}
