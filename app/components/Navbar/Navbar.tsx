@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { INavLink } from "@/app/interfaces";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,13 +38,12 @@ const Navbar = () => {
 
         <div className="hidden lg:flex space-x-8">
           <NavLink href="/" label="Home" pathname={pathname} />
-          <NavLink href="/about" label="About" pathname={pathname} hasArrow />
-          <NavLink href="/events" label="Events" pathname={pathname} hasArrow />
+          <NavLink href="/about" label="About" pathname={pathname} />
+          <NavLink href="/events" label="Events" pathname={pathname} />
           <NavLink
-            href="/case-competitions"
-            label="Case Competitions"
+            href="/case-competition"
+            label="Case Competition"
             pathname={pathname}
-            hasArrow
           />
           <NavLink href="/contact" label="Contact" pathname={pathname} />
         </div>
@@ -105,7 +105,6 @@ const Navbar = () => {
             label="About"
             pathname={pathname}
             mobile
-            hasArrow
             onClick={toggleMenu}
           />
           <NavLink
@@ -113,7 +112,6 @@ const Navbar = () => {
             label="Events"
             pathname={pathname}
             mobile
-            hasArrow
             onClick={toggleMenu}
           />
           <NavLink
@@ -121,7 +119,6 @@ const Navbar = () => {
             label="Case Competitions"
             pathname={pathname}
             mobile
-            hasArrow
             onClick={toggleMenu}
           />
           <NavLink
@@ -142,16 +139,8 @@ const NavLink = ({
   label,
   pathname,
   mobile = false,
-  hasArrow = false,
   onClick,
-}: {
-  href: string;
-  label: string;
-  pathname: string;
-  mobile?: boolean;
-  hasArrow?: boolean;
-  onClick?: () => void;
-}) => {
+}: INavLink) => {
   const isActive = pathname === href;
 
   return (
@@ -162,27 +151,7 @@ const NavLink = ({
       } text-white font-['Roboto_Mono'] relative overflow-hidden group`}
       onClick={onClick}
     >
-      <span className="flex items-center">
-        {label}
-        {hasArrow && (
-          <svg
-            className={`w-4 h-4 ml-1 transform transition-transform duration-200 ease-in-out ${
-              mobile ? "" : "group-hover:translate-y-1"
-            }`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        )}
-      </span>
+      <span className="flex items-center">{label}</span>
       <span
         className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#9E2424] to-[#CC0000] transform ${
           isActive ? "scale-x-100" : "scale-x-0"
