@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center lg:items-end">
-          <div className="flex justify-center lg:justify-end space-x-4 mb-4">
+          {/* <div className="flex justify-center lg:justify-end space-x-4 mb-4">
             <SocialIcon
               href="https://www.instagram.com/seneca_sdc?igsh=enZ0d21kZnM4eXQ4"
               icon={FaInstagram}
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
               href="https://www.linkedin.com/company/seneca-software-developers-club/"
               icon={FaLinkedin}
             />
-          </div>
+          </div> */}
           <div className="text-center lg:text-right">
             <p className="font-bold mb-2">Email Us:</p>
             <a

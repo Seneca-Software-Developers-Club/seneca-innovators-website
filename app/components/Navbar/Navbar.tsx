@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { INavLink } from "@/app/interfaces";
-import { INavLink } from "@/app/interfaces";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,8 +39,6 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-8">
           <NavLink href="/" label="Home" pathname={pathname} />
           <NavLink
-            href="/case-competition"
-            label="Case Competition"
             href="/case-competition"
             label="Case Competition"
             pathname={pathname}
@@ -120,7 +117,6 @@ const NavLink = ({
   mobile = false,
   onClick,
 }: INavLink) => {
-}: INavLink) => {
   const isActive = pathname === href;
 
   return (
@@ -131,7 +127,6 @@ const NavLink = ({
       } text-white font-['Roboto_Mono'] relative overflow-hidden group`}
       onClick={onClick}
     >
-      <span className="flex items-center">{label}</span>
       <span className="flex items-center">{label}</span>
       <span
         className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#9E2424] to-[#CC0000] transform ${

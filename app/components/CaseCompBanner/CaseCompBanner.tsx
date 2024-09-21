@@ -86,6 +86,13 @@ const CaseCompBanner: React.FC = () => {
             <FiArrowRight className="ml-2 animate-pulse" />
           </Button>
           <Button
+            className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            size="lg"
+          >
+            Round 1 Submission
+            <FiArrowRight className="ml-2 animate-pulse" />
+          </Button>
+          <Button
             className="flex items-center mx-2 py-4 bg-[#463636] hover:bg-[#1F1E1E] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
           >

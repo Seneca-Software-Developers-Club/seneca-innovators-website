@@ -14,6 +14,7 @@ const timelineSteps = [
     title: "Create a Team",
     description: "Create a team of 2-4 members.",
     label: "Starts",
+    styleClass: "justify-end md:mr-8",
     date: "Monday, September 23, 2024",
   },
   {
@@ -22,6 +23,7 @@ const timelineSteps = [
     description:
       "Analyze OVHcloud's challenges. Write a strategic recommendation (250 words max) and a biography of contributors (100 words max).",
     label: "Submission Deadline",
+    styleClass: "justify-left md:ml-8",
     date: "Monday, September 30, 2024",
   },
   {
@@ -30,6 +32,7 @@ const timelineSteps = [
     description:
       "Wait for selection confirmation. Notifications will be sent to successful teams.",
     label: "Notification Date",
+    styleClass: "justify-end md:mr-8",
     date: "Friday, October 4, 2024",
   },
   {
@@ -38,6 +41,7 @@ const timelineSteps = [
     description:
       "Create a 10-15 minute presentation deck. Register for the conference and submit your presentation to the organizers.",
     label: "Submission Deadline",
+    styleClass: "justify-left md:ml-8",
     date: "Friday, October 18, 2024",
   },
   {
@@ -46,6 +50,7 @@ const timelineSteps = [
     description:
       "Present your solutions to OVHcloud representatives at Seneca Polytechnic.",
     label: "Event Date",
+    styleClass: "justify-end md:mr-8",
     date: "Wednesday, October 23, 2024",
   },
   {
@@ -53,6 +58,7 @@ const timelineSteps = [
     title: "Receive Your Certification",
     description:
       "Receive your certification for participation in the competition.",
+    styleClass: "justify-left md:ml-8",
   },
 ];
 
@@ -84,21 +90,24 @@ const CaseCompActionFlow: React.FC = () => {
                       </h3>
                     </div>
                     <p className="text-gray-300">{step.description}</p>
-                    <p className="mt-4 text-lg text-white">
-                      <span className="font-bold">{step.label}</span>
+                    <div className="mt-4 text-lg text-white">
+                      <div className="font-bold">{step.label}</div>
                       {step.date && (
-                        <span className="ml-2 font-semibold text-gray-900 bg-[#f9f9f9] border border-gray-300 rounded-md px-2 py-1 shadow-sm">
+                        <span className="font-semibold text-gray-900 bg-[#f9f9f9] border border-gray-300 rounded-md px-2 py-1 mt-3 shadow-sm">
                           {step.date}
                         </span>
                       )}
-                    </p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="w-full md:w-1/2 flex justify-center relative">
-                  <div className="h-12 w-12 bg-[#E63946] rounded-full flex items-center justify-center text-white font-bold text-2xl z-10">
-                    {index + 1}
+                <div className="w-full md:w-1/2 flex relative">
+                  <div className={`w-full flex ${step.styleClass}`}>
+                    <div className="h-12 w-12 bg-[#E63946] rounded-full flex items-center justify-center text-white font-bold text-2xl z-10">
+                      {index + 1}
+                    </div>
                   </div>
+
                   <div className="block md:hidden w-full border-t-4 border-[#E63946] absolute top-1/2 transform -translate-y-1/2"></div>
                 </div>
               </div>
