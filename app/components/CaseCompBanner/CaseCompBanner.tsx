@@ -6,7 +6,7 @@ import { ITimeRemaining } from "@/app/interfaces";
 import { Button } from "@nextui-org/react";
 import { FiArrowRight } from "react-icons/fi";
 
-const CaseCompetitionBanner: React.FC = () => {
+const CaseCompBanner: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState<ITimeRemaining>({
     days: 0,
     hours: 0,
@@ -79,7 +79,7 @@ const CaseCompetitionBanner: React.FC = () => {
 
         <div className="flex flex-col md:w-2/6">
           <Button
-            className="flex items-center mx-2 py-4 mb-2 bg-[#CC0000] hover:bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="flex items-center mx-2 py-4 mb-2 bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
           >
             Register Now
@@ -98,4 +98,4 @@ const CaseCompetitionBanner: React.FC = () => {
   );
 };
 
-export default CaseCompetitionBanner;
+export default CaseCompBanner;

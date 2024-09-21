@@ -38,14 +38,11 @@ const Navbar = () => {
 
         <div className="hidden lg:flex space-x-8">
           <NavLink href="/" label="Home" pathname={pathname} />
-          <NavLink href="/about" label="About" pathname={pathname} />
-          <NavLink href="/events" label="Events" pathname={pathname} />
           <NavLink
             href="/case-competition"
             label="Case Competition"
             pathname={pathname}
           />
-          <NavLink href="/contact" label="Contact" pathname={pathname} />
         </div>
 
         <button
@@ -101,29 +98,8 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
           <NavLink
-            href="/about"
-            label="About"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/events"
-            label="Events"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/case-competitions"
-            label="Case Competitions"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/contact"
-            label="Contact"
+            href="/case-competition"
+            label="Case Competition"
             pathname={pathname}
             mobile
             onClick={toggleMenu}
