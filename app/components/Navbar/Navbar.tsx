@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="bg-black p-4 fixed w-full z-50">
+    <nav className="bg-black p-4 fixed w-full z-50 top-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-white font-normal text-xl pl-0">
           <span className="font-['Roboto_Mono'] uppercase tracking-wider">

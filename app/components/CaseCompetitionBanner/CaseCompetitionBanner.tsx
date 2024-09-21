@@ -35,11 +35,13 @@ const CaseCompetitionBanner: React.FC = () => {
       <Image
         alt="Background"
         src="/media/images/Background.jpeg"
-        fill
+        layout="responsive"
+        width={1920}
+        height={1080}
         className="absolute inset-0 object-cover w-full h-full"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1F1E1E] to-transparent flex flex-col items-center justify-center p-6 text-left">
+      <div className=" px-[10%] absolute inset-0 bg-gradient-to-r from-[#1F1E1E] to-transparent flex flex-col items-center justify-center p-6 text-left">
         <div className="flex flex-col items-center mb-4 text-center md:w-2/3">
           <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-[#E63946] drop-shadow-2xl">
             Case Competition 2024
