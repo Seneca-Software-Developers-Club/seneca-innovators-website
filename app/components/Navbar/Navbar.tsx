@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { INavLink } from "@/app/interfaces";
+import { INavLink } from "@/app/interfaces";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="bg-black p-4 fixed w-full z-50">
+    <nav className="bg-black p-4 fixed w-full z-50 top-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-white font-normal text-xl pl-0">
           <span className="font-['Roboto_Mono'] uppercase tracking-wider">
@@ -39,6 +40,8 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-8">
           <NavLink href="/" label="Home" pathname={pathname} />
           <NavLink
+            href="/case-competition"
+            label="Case Competition"
             href="/case-competition"
             label="Case Competition"
             pathname={pathname}
@@ -117,6 +120,7 @@ const NavLink = ({
   mobile = false,
   onClick,
 }: INavLink) => {
+}: INavLink) => {
   const isActive = pathname === href;
 
   return (
@@ -127,6 +131,7 @@ const NavLink = ({
       } text-white font-['Roboto_Mono'] relative overflow-hidden group`}
       onClick={onClick}
     >
+      <span className="flex items-center">{label}</span>
       <span className="flex items-center">{label}</span>
       <span
         className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#9E2424] to-[#CC0000] transform ${

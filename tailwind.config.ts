@@ -30,6 +30,9 @@ const config: Config = {
         height: "height",
         spacing: "margin, padding",
       },
+      boxShadow: {
+        "seneca-bright-red": "0 0 25px 0 #CC0000", // Custom shadow
+      },
     },
     variants: {
       extend: {

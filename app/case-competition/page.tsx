@@ -1,4 +1,5 @@
 import React from "react";
+import Sponsors from "../components/Sponsors/Sponsors";
 import CaseCompBanner from "../components/CaseCompBanner/CaseCompBanner";
 import CaseCompIntro from "../components/CaseCompIntro/CaseCompIntro";
 import CaseCompActionFlow from "../components/CaseCompActionFlow/CaseCompActionFlow";
@@ -11,6 +12,7 @@ const CaseCompetitionPage: React.FC = () => {
       <CaseCompPrize />
       <CaseCompIntro />
       <CaseCompActionFlow />
+      <Sponsors />
     </div>
   );
 };
