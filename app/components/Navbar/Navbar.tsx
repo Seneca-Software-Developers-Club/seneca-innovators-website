@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="bg-black p-4 fixed w-full z-50">
+    <nav className="bg-black p-4 fixed w-full z-50 top-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-white font-normal text-xl pl-0">
           <span className="font-['Roboto_Mono'] uppercase tracking-wider">
@@ -40,8 +40,8 @@ const Navbar = () => {
           <NavLink href="/about" label="About" pathname={pathname} hasArrow />
           <NavLink href="/events" label="Events" pathname={pathname} hasArrow />
           <NavLink
-            href="/case-competitions"
-            label="Case Competitions"
+            href="/case-competition"
+            label="Case Competition"
             pathname={pathname}
             hasArrow
           />
