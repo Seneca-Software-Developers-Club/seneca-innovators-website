@@ -61,18 +61,18 @@ const Footer: React.FC = () => {
   );
 };
 
-const SocialIcon: React.FC<{ href: string; icon: React.ElementType }> = ({
-  href,
-  icon: Icon,
-}) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-white text-xl sm:text-2xl p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 ease-in-out transform hover:scale-110"
-  >
-    <Icon />
-  </a>
-);
+// const SocialIcon: React.FC<{ href: string; icon: React.ElementType }> = ({
+//   href,
+//   icon: Icon,
+// }) => (
+//   <a
+//     href={href}
+//     target="_blank"
+//     rel="noopener noreferrer"
+//     className="text-white text-xl sm:text-2xl p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 ease-in-out transform hover:scale-110"
+//   >
+//     <Icon />
+//   </a>
+// );
 
 export default Footer;
