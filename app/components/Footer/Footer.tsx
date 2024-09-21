@@ -1,11 +1,11 @@
 import React from "react";
-import {
-  FaInstagram,
-  FaDribbble,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedin,
-} from "react-icons/fa";
+// import {
+//   FaInstagram,
+//   FaDribbble,
+//   FaTwitter,
+//   FaYoutube,
+//   FaLinkedin,
+// } from "react-icons/fa";
 import BackToTopButton from "./BackToTopButton";
 
 const Footer: React.FC = () => {
