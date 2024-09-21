@@ -66,6 +66,7 @@ const CaseCompetitionBanner: React.FC = () => {
               >
                 <span
                   className="countdown font-mono text-3xl md:text-4xl"
+                  // @ts-expect-error: This is responsible for the animation
                   style={{ "--value": value }}
                 >
                   <span></span>
