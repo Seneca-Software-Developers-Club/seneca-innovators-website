@@ -76,7 +76,7 @@ const timelineSteps = [
 
 const CaseCompActionFlow: React.FC = () => {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-12 bg-[#1F1E1E]">
+    <section className="py-16 px-4 sm:px-6 lg:px-12 bg-[#1F1E1E]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#E63946] mb-10">
           Action Flow Timeline
