@@ -6,7 +6,7 @@ import { ITimeRemaining } from "@/app/interfaces";
 import { Button } from "@nextui-org/react";
 import { FiArrowRight } from "react-icons/fi";
 
-const CaseCompetitionBanner: React.FC = () => {
+const CaseCompBanner: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState<ITimeRemaining>({
     days: 0,
     hours: 0,
@@ -35,13 +35,11 @@ const CaseCompetitionBanner: React.FC = () => {
       <Image
         alt="Background"
         src="/media/images/Background.jpeg"
-        layout="responsive"
-        width={1920}
-        height={1080}
+        fill
         className="absolute inset-0 object-cover w-full h-full"
       />
 
-      <div className=" px-[10%] absolute inset-0 bg-gradient-to-r from-[#1F1E1E] to-transparent flex flex-col items-center justify-center p-6 text-left">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1F1E1E] to-transparent flex flex-col items-center justify-center p-6 text-left">
         <div className="flex flex-col items-center mb-4 text-center md:w-2/3">
           <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-[#E63946] drop-shadow-2xl">
             Case Competition 2024
@@ -81,10 +79,17 @@ const CaseCompetitionBanner: React.FC = () => {
 
         <div className="flex flex-col md:w-2/6">
           <Button
-            className="flex items-center mx-2 py-4 mb-2 bg-[#CC0000] hover:bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="flex items-center mx-2 py-4 mb-2 bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
           >
             Register Now
+            <FiArrowRight className="ml-2 animate-pulse" />
+          </Button>
+          <Button
+            className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            size="lg"
+          >
+            Round 1 Submission
             <FiArrowRight className="ml-2 animate-pulse" />
           </Button>
           <Button
@@ -100,4 +105,4 @@ const CaseCompetitionBanner: React.FC = () => {
   );
 };
 
-export default CaseCompetitionBanner;
+export default CaseCompBanner;
