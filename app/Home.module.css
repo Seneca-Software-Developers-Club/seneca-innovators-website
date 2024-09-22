@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=IBM+Plex+Mono&display=swap");
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/media/images/Background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.logoLink {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logoLink:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+}
