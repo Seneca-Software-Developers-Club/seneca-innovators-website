@@ -64,24 +64,29 @@ const FAQ: React.FC = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10" style={{ color: "#E63946", textShadow: "1px 1px 2px rgba(0, 0, 0, 0.6)" }}>
           Frequently Asked Questions
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {faqs.map((faq, index) => (
-            <div key={index} className="collapse mb-3" style={{ backgroundColor: "#1c1c1e", border: "1px solid #040404" }} onClick={() => toggleFAQ(index)}>
-              <input type="checkbox" checked={expandedIndex === index} readOnly />
-              <div className="collapse-title flex justify-between items-center text-lg md:text-xl font-medium" style={{ color: "#E63946" }}>
-                <span>{faq.question}</span>
-                <span style={{ color: "#E63946", transition: "transform 0.3s", transform: expandedIndex === index ? "rotate(180deg)" : "rotate(0deg)" }}>
-                  &#x2193;
-                </span>
-              </div>
-              {expandedIndex === index && (
-                <div className="collapse-content" style={{ color: "#ffffff" }}>
-                  <p>{faq.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start"> {/* Changed to items-start */}
+  {faqs.map((faq, index) => (
+    <div
+      key={index}
+      className="collapse"
+      style={{ backgroundColor: "#1c1c1e", border: "1px solid #040404" }}
+      onClick={() => toggleFAQ(index)}
+    >
+      <input type="checkbox" checked={expandedIndex === index} readOnly />
+      <div className="collapse-title flex justify-between items-center text-lg md:text-xl font-medium" style={{ color: "#E63946" }}>
+        <span>{faq.question}</span>
+        <span style={{ color: "#E63946", transition: "transform 0.5s", transform: expandedIndex === index ? "rotate(180deg)" : "rotate(0deg)" }}>
+          &#x2193;
+        </span>
+      </div>
+      {expandedIndex === index && (
+        <div className="collapse-content" style={{ color: "#ffffff" }}>
+          <p>{faq.answer}</p>
         </div>
+      )}
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );
