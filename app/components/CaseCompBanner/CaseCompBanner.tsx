@@ -79,16 +79,30 @@ const CaseCompBanner: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:w-2/6">
-          <Button
+          {/*<Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
+            onClick={() =>
+              window.open(
+                "",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
           >
             Register Now
             <FiArrowRight className="ml-2 animate-pulse" />
-          </Button>
+          </Button>*/}
           <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
+            onClick={() =>
+              window.open(
+                "https://forms.office.com/r/DgCQWtMKgh",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
           >
             Round 1 Submission
             <FiArrowRight className="ml-2 animate-pulse" />
@@ -96,6 +110,9 @@ const CaseCompBanner: React.FC = () => {
           <Button
             className="flex items-center mx-2 py-4 bg-[#463636] hover:bg-[#1F1E1E] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
+            onClick={() =>
+              window.open("/case.pdf", "_blank", "noopener,noreferrer")
+            }
           >
             Download Case
             <FiArrowRight className="ml-2 animate-pulse" />
