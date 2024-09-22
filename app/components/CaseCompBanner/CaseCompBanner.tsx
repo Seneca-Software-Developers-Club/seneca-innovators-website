@@ -34,8 +34,9 @@ const CaseCompBanner: React.FC = () => {
     <div className="font-sans relative h-screen flex flex-col items-center justify-center text-white px-4 md:px-16">
       <Image
         alt="Background"
-        src="/media/images/Background.jpeg"
-        fill
+        src="/media/images/Background.png"
+        layout="fill"
+        quality={100}
         className="absolute inset-0 object-cover w-full h-full"
       />
 
