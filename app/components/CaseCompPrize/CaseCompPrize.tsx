@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaTrophy } from "react-icons/fa";
 
@@ -14,7 +15,16 @@ const CaseCompPrize: React.FC = () => {
         Participate for a chance to win up to $1000 in cash prizes. Showcase
         your skills and get recognized by industry leaders.
       </p>
-      <button className="bg-[#b52828] hover:bg-[#E63946] text-white font-semibold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+      <button
+        className="bg-[#b52828] hover:bg-[#E63946] text-white font-semibold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+        onClick={() =>
+          window.open(
+            "https://forms.office.com/r/DgCQWtMKgh",
+            "_blank",
+            "noopener,noreferrer"
+          )
+        }
+      >
         Join Now
       </button>
     </div>
