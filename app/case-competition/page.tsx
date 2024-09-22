@@ -7,7 +7,7 @@ import CaseCompPrize from "../components/CaseCompPrize/CaseCompPrize";
 
 const CaseCompetitionPage: React.FC = () => {
   return (
-    <div className="pt-16">
+    <div className="mt-[60px]">
       <CaseCompBanner />
       <CaseCompPrize />
       <CaseCompIntro />
