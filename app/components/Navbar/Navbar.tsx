@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="bg-black p-4 fixed w-full z-50">
+    <nav className="bg-black p-4 fixed w-full z-50 top-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-white font-normal text-xl pl-0">
           <span className="font-['Roboto_Mono'] uppercase tracking-wider">
@@ -38,14 +38,11 @@ const Navbar = () => {
 
         <div className="hidden lg:flex space-x-8">
           <NavLink href="/" label="Home" pathname={pathname} />
-          <NavLink href="/about" label="About" pathname={pathname} />
-          <NavLink href="/events" label="Events" pathname={pathname} />
           <NavLink
             href="/case-competition"
             label="Case Competition"
             pathname={pathname}
           />
-          <NavLink href="/contact" label="Contact" pathname={pathname} />
         </div>
 
         <button
@@ -101,29 +98,8 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
           <NavLink
-            href="/about"
-            label="About"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/events"
-            label="Events"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/case-competitions"
-            label="Case Competitions"
-            pathname={pathname}
-            mobile
-            onClick={toggleMenu}
-          />
-          <NavLink
-            href="/contact"
-            label="Contact"
+            href="/case-competition"
+            label="Case Competition"
             pathname={pathname}
             mobile
             onClick={toggleMenu}
