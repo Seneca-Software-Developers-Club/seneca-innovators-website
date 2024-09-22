@@ -18,6 +18,7 @@ const config: Config = {
         "seneca-bright-red": "#CC0000",
         "seneca-dark-gray": "#463636",
         "seneca-black": "#1F1E1E",
+        "ovhc-blue": "#000d9d",
       },
       fontFamily: {
         "roboto-mono": ['"Roboto Mono"', "monospace"],
