@@ -21,7 +21,7 @@ const Home = () => {
               className={styles.logoLink}
             >
               <Image
-                src="/logo/SBC.png"
+                src="/Logo/SBC.png"
                 alt="Seneca Business Club"
                 width={300}
                 height={300}
@@ -35,7 +35,7 @@ const Home = () => {
               className={styles.logoLink}
             >
               <Image
-                src="/logo/SMC.png"
+                src="/Logo/SMC.png"
                 alt="Seneca Marketing Club"
                 width={300}
                 height={300}
@@ -49,7 +49,7 @@ const Home = () => {
               className={styles.logoLink}
             >
               <Image
-                src="/logo/SDC.png"
+                src="/Logo/SDC.png"
                 alt="Seneca Software Developers Club"
                 width={300}
                 height={300}
