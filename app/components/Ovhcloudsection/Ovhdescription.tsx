@@ -40,6 +40,8 @@ const Ovhcloudsection = () => {
           </ul>
           <a
             href="https://www.ovhcloud.com/en-ca/"
+            target="_blank"
+            rel="noreferrer noopener"
             className="inline-block px-6 py-3 bg-ovhc-blue text-white rounded-lg hover:bg-[#000b83] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition"
           >
             Learn More
@@ -47,7 +49,11 @@ const Ovhcloudsection = () => {
         </div>
 
         {/* Visual or Graphic */}
-        <div className="flex justify-center items-center bg-ovhc-blue w-[350px] h-[300px] rounded-[50px] md:ml-40">
+
+        <div
+          className="flex justify-center items-center bg-ovhc-blue w-[350px] h-[300px] rounded-[50px] md:ml-40 shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+          onClick={() => window.open("https://www.ovhcloud.com/en-ca/")}
+        >
           <Image
             src="/media/images/OVHcloud_stacked_logo_white_RGB.svg"
             alt="OVH Cloud Diagram"
