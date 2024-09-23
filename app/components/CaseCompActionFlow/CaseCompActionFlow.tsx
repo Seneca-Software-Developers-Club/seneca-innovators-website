@@ -47,7 +47,7 @@ const timelineSteps = [
     description: [
       "1) Create a presentation deck (PowerPoint, Google Slides, etc.).",
       "2) Follow format requirements and ensure for a 10-15 minute presentation (length may be updated).",
-      "3) <a href='' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
+      "3) <a target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
       "4) Email your presentation deck to: TBD",
     ],
     label: "Submission Deadline",
@@ -58,7 +58,7 @@ const timelineSteps = [
     icon: <FaCalendarDay />,
     title: "Attend the Competition",
     description: [
-      "Present your solutions to OVHcloud representatives at Seneca Polytechnic, Newnham Campus. Connect with industry experts, peers, and mentors.",
+      "Present your solutions to OVHcloud representatives in-person at Seneca Polytechnic, Newnham Campus. Connect with industry experts, peers, and mentors. Winners will be announced at the end of the event, Once the selected teams have presented.",
     ],
     label: "Event Date",
     styleClass: "justify-end md:mr-8",
@@ -94,7 +94,7 @@ const CaseCompActionFlow: React.FC = () => {
                 }`}
               >
                 <div className="w-full md:w-1/2 md:px-6">
-                  <div className="bg-gray-800 p-6 rounded-lg shadow-lg relative">
+                  <div className="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 relative">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="text-4xl text-[#E63946]">{step.icon}</div>
                       <h3 className="text-xl md:text-2xl font-bold text-white">

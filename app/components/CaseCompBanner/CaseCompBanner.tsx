@@ -42,7 +42,7 @@ const CaseCompBanner: React.FC = () => {
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#1F1E1E] to-transparent flex flex-col items-center justify-center p-6 text-left">
         <div className="flex flex-col items-center mb-4 text-center md:w-2/3">
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-[#E63946] drop-shadow-2xl">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-[#E63946] drop-shadow-2xl">
             Case Competition 2024
           </h1>
           <h2 className="text-lg md:text-2xl font-semibold mb-6 text-[#FFFFFF] flex items-center">
@@ -52,9 +52,16 @@ const CaseCompBanner: React.FC = () => {
               src="/media/images/OVHcloud_master_logo_white_RGB.svg"
               width={100}
               height={100}
-              className="ml-2 h-10 w-auto"
+              className="ml-2 h-10 w-auto hidden md:inline"
             />
           </h2>
+          <Image
+            alt="OVH Cloud Logo"
+            src="/media/images/OVHcloud_master_logo_white_RGB.svg"
+            width={100}
+            height={100}
+            className="ml-2 h-10 w-auto mb-6 md:hidden"
+          />
           <h3 className="text-sm md:text-lg font-medium mb-6 text-[#E0E0E0]">
             Brought to you by Seneca Innovators
           </h3>

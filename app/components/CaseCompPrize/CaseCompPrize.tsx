@@ -4,7 +4,7 @@ import { FaTrophy } from "react-icons/fa";
 
 const CaseCompPrize: React.FC = () => {
   return (
-    <div className="bg-white shadow-md rounded-xl p-8 md:p-28 max-w-full mx-auto text-center border-t-8 border-[#9E2424]">
+    <div className="bg-gray-200 shadow-md rounded-xl p-8 md:p-28 max-w-full mx-auto text-center border-t-8 border-[#9E2424]">
       <div className="flex items-center justify-center mb-6">
         <FaTrophy className="text-9xl text-yellow-500 mb-4" />
       </div>

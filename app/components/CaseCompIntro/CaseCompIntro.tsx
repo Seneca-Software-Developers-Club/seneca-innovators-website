@@ -5,7 +5,7 @@ import { FiCheckCircle } from "react-icons/fi";
 
 const CaseCompIntro: React.FC = () => {
   return (
-    <section className="py-28 px-8 md:px-24 bg-[#1F1E1E] text-gray-200">
+    <section className="pt-12 pb-16 md:py-28 px-8 md:px-24 bg-[#1F1E1E] text-gray-200">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#E63946] mb-8">
           Seneca Innovators Case Competition
