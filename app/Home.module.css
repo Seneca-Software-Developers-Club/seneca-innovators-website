@@ -89,21 +89,11 @@
     flex-direction: column;
     gap: 3rem;
   }
-
-  .logo {
-    width: 200px;
-    height: 200px;
-  }
 }
 
 @media (max-width: 480px) {
   .title {
     font-size: 2rem;
     margin-bottom: 2rem;
-  }
-
-  .logo {
-    width: 150px;
-    height: 150px;
   }
 }

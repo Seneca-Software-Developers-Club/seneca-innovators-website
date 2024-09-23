@@ -5,7 +5,7 @@ import { FiCheckCircle } from "react-icons/fi";
 
 const CaseCompIntro: React.FC = () => {
   return (
-    <section className="py-28 px-8 md:px-24 bg-[#1F1E1E] text-gray-200">
+    <section className="pt-12 pb-16 md:py-28 px-8 md:px-24 bg-[#1F1E1E] text-gray-200">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-[#E63946] mb-8">
           Seneca Innovators Case Competition
@@ -24,7 +24,7 @@ const CaseCompIntro: React.FC = () => {
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Resume Boost */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Resume Boost</h4>
@@ -35,7 +35,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Experience */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Experience</h4>
@@ -47,7 +47,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Prize Money */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Prize Money</h4>
@@ -58,7 +58,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Networking */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Networking</h4>
@@ -69,7 +69,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Coaching & Training */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Coaching & Training</h4>
@@ -80,7 +80,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Certificate of Achievement */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Certificate of Achievement</h4>
@@ -91,7 +91,7 @@ const CaseCompIntro: React.FC = () => {
           </div>
 
           {/* Teamwork */}
-          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 md:col-span-2">
+          <div className="flex items-start gap-4 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 md:col-span-2">
             <FiCheckCircle className="text-green-500 text-3xl" />
             <div>
               <h4 className="text-xl font-bold">Teamwork</h4>

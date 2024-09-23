@@ -12,7 +12,7 @@ const timelineSteps = [
   {
     icon: <FaUsers />,
     title: "Create a Team",
-    description: "Create a team of 2-4 members.",
+    description: ["Create a team of 2-4 members."],
     label: "Starts",
     styleClass: "justify-end md:mr-8",
     date: "Monday, September 23, 2024",
@@ -20,8 +20,13 @@ const timelineSteps = [
   {
     icon: <FaFileAlt />,
     title: "Executive Submission",
-    description:
-      "Analyze OVHcloud's challenges. Write a strategic recommendation (250 words max) and a biography of contributors (100 words max).",
+    description: [
+      "1) <a href='/case.pdf' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Download the case</a> and analyze current challenges faced by OVHcloud.",
+      "2) Develop and write a strategic recommendation (250 words max).",
+      "3) Ensure your Executive Submission follows Seneca Polytechnic's Academic Integrity Policy.",
+      "4) Each submission must include a professional biography of all contributors (100 words max).",
+      "5) Submit your Executive Submission <a href='https://forms.office.com/r/DgCQWtMKgh' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>here</a> by Monday, September 30, 2024.",
+    ],
     label: "Submission Deadline",
     styleClass: "justify-left md:ml-8",
     date: "Monday, September 30, 2024",
@@ -29,8 +34,9 @@ const timelineSteps = [
   {
     icon: <FaCheckCircle />,
     title: "Selection Confirmation",
-    description:
-      "Wait for selection confirmation. Notifications will be sent to successful teams.",
+    description: [
+      "Wait for selection confirmation. Notifications will be sent to successful teams via email.",
+    ],
     label: "Notification Date",
     styleClass: "justify-end md:mr-8",
     date: "Friday, October 4, 2024",
@@ -38,8 +44,12 @@ const timelineSteps = [
   {
     icon: <FaChalkboardTeacher />,
     title: "Prepare Your Presentation",
-    description:
-      "Create a 10-15 minute presentation deck. Register for the conference and submit your presentation to the organizers.",
+    description: [
+      "1) Create a presentation deck (PowerPoint, Google Slides, etc.).",
+      "2) Follow format requirements and ensure for a 10-15 minute presentation (length may be updated).",
+      "3) <a target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
+      "4) Email your presentation deck to: TBD",
+    ],
     label: "Submission Deadline",
     styleClass: "justify-left md:ml-8",
     date: "Friday, October 18, 2024",
@@ -47,8 +57,9 @@ const timelineSteps = [
   {
     icon: <FaCalendarDay />,
     title: "Attend the Competition",
-    description:
-      "Present your solutions to OVHcloud representatives at Seneca Polytechnic.",
+    description: [
+      "Present your solutions to OVHcloud representatives in-person at Seneca Polytechnic, Newnham Campus. Connect with industry experts, peers, and mentors. Winners will be announced at the end of the event, Once the selected teams have presented.",
+    ],
     label: "Event Date",
     styleClass: "justify-end md:mr-8",
     date: "Wednesday, October 23, 2024",
@@ -56,8 +67,9 @@ const timelineSteps = [
   {
     icon: <FaCertificate />,
     title: "Receive Your Certification",
-    description:
+    description: [
       "Receive your certification for participation in the competition.",
+    ],
     styleClass: "justify-left md:ml-8",
   },
 ];
@@ -82,18 +94,28 @@ const CaseCompActionFlow: React.FC = () => {
                 }`}
               >
                 <div className="w-full md:w-1/2 md:px-6">
-                  <div className="bg-gray-800 p-6 rounded-lg shadow-lg relative">
+                  <div className="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 relative">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="text-4xl text-[#E63946]">{step.icon}</div>
                       <h3 className="text-xl md:text-2xl font-bold text-white">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-gray-300">{step.description}</p>
+                    <p className="text-gray-300">
+                      {step.description.map((text, index) => (
+                        <>
+                          <span
+                            key={index}
+                            dangerouslySetInnerHTML={{ __html: text }}
+                          />
+                          <br />
+                        </>
+                      ))}
+                    </p>
                     <div className="mt-4 text-lg text-white">
-                      <div className="font-bold">{step.label}</div>
+                      <div className="font-bold mb-2">{step.label}</div>
                       {step.date && (
-                        <span className="font-semibold text-gray-900 bg-[#f9f9f9] border border-gray-300 rounded-md px-2 py-1 mt-3 shadow-sm">
+                        <span className="font-semibold text-gray-900 bg-[#f9f9f9] border border-gray-300 rounded-md px-2 py-1 shadow-sm">
                           {step.date}
                         </span>
                       )}
