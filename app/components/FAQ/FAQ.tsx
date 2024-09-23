@@ -11,7 +11,7 @@ const FAQ: React.FC = () => {
     {
       question: "What if I can't form a diverse team?",
       answer:
-        "Join our Seneca Innovators WhatsApp Group Chat and communicate with students from different programs.",
+        "Join our Seneca Innovators <a href='https://chat.whatsapp.com/DreSesvx2TE0nd3U2pCKbt' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>WhatsApp Group Chat</a> and communicate with students from different programs.",
     },
     {
       question: "What is a Case Competition?",
@@ -96,7 +96,7 @@ const FAQ: React.FC = () => {
                     className="collapse-content"
                     style={{ color: "#e5e7eb" }}
                   >
-                    <p>{faq.answer}</p>
+                    <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
                   </div>
                 )}
               </div>

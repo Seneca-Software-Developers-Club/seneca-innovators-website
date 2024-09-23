@@ -24,7 +24,7 @@ const Ovhcloudsection = () => {
             id="ovh-cloud-heading"
             className="text-4xl font-bold text-[#E63946] mb-4"
           >
-            Who is OVH Cloud?
+            Who is OVHcloud?
           </h2>
           <p className="text-lg text-gray-200 font-semibold mb-6">
             OVHcloud is the largest cloud hosting provider in Europe and the
