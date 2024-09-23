@@ -52,7 +52,7 @@ const CaseCompIntro: React.FC = () => {
             <div>
               <h4 className="text-xl font-bold">Prize Money</h4>
               <p className="text-gray-300">
-                Stand a chance to win up to $1,000.
+                Stand a chance to win up to $1000.
               </p>
             </div>
           </div>
