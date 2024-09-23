@@ -21,7 +21,7 @@ const timelineSteps = [
     icon: <FaFileAlt />,
     title: "Executive Submission",
     description: [
-      "1) <a href='/case.pdf' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Download the case</a> and analyze current challenges faced by OVHcloud.",
+      "1) For Round 1, <a href='/case.pdf' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>download the case</a> and analyze current challenges faced by OVHcloud.",
       "2) Develop and write a strategic recommendation (250 words max).",
       "3) Ensure your Executive Submission follows Seneca Polytechnic's Academic Integrity Policy.",
       "4) Submit your Executive Submission <a href='https://forms.office.com/r/DgCQWtMKgh' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>here</a> by Monday, September 30, 2024.",
@@ -44,10 +44,10 @@ const timelineSteps = [
     icon: <FaChalkboardTeacher />,
     title: "Prepare Your Presentation",
     description: [
-      "1) Create a presentation deck (PowerPoint, Google Slides, etc.).",
+      "1) For Round 2, Create a presentation deck (PowerPoint, Google Slides, etc.).",
       "2) Follow format requirements and ensure for a 10-15 minute presentation (length may be updated).",
       "3) <a target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
-      "4) Email your presentation deck to: TBD",
+      "4) Email your presentation deck to: TBD. Note: Only the final 4 teams will make it through to the next stage.",
     ],
     label: "Submission Deadline",
     styleClass: "justify-left md:ml-8",
