@@ -6,7 +6,7 @@ const FAQ: React.FC = () => {
     {
       question: "Who makes up a team?",
       answer:
-        "A team consists of 2-4 students, recommended to have a student from each area of study, business, marketing and software development to ensure concept comprehension. However, this is not mandatory, and we still reccomend you to participate even if you can't form a diverse team.",
+        "A team consists of a minimum of 2- and a maximum of 4 students, and it is recommended to have a student from each area of study, business, marketing and software development to ensure concept comprehension. However, this is not mandatory, and we still recommend you participate even if you can't form a diverse team.",
     },
     {
       question: "What if I can't form a diverse team?",
