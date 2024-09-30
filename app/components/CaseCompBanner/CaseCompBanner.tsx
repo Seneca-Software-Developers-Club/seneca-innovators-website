@@ -13,7 +13,7 @@ const CaseCompBanner: React.FC = () => {
     minutes: 0,
   });
 
-  const endDate = new Date("2024-10-01T00:00:00Z");
+  const endDate = new Date("2024-10-01T04:00:00Z");
 
   const calculateTimeRemaining = () => {
     const now = new Date();
