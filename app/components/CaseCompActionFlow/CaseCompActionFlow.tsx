@@ -47,7 +47,7 @@ const timelineSteps = [
       "1) For Round 2, Create a presentation deck (PowerPoint, Google Slides, etc.).",
       "2) Follow format requirements and ensure for a 10-15 minute presentation (length may be updated).",
       "3) <a target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
-      "4) Email your presentation deck to: TBD. Note: Only the final 4 teams will make it through to the next stage.",
+      "Note: Only the final 4 teams will make it through to this stage.",
     ],
     label: "Submission Deadline",
     styleClass: "justify-left md:ml-8",
