@@ -103,15 +103,16 @@ const CaseCompBanner: React.FC = () => {
           <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
-            onClick={() =>
+            disabled
+            /*onClick={() =>
               window.open(
                 "https://forms.office.com/r/DgCQWtMKgh",
                 "_blank",
                 "noopener,noreferrer"
               )
-            }
+            }*/
           >
-            Round 1 Submission
+            Round 1 Submission (Unavailable)
             <FiArrowRight className="ml-2 animate-pulse" />
           </Button>
           <Button
