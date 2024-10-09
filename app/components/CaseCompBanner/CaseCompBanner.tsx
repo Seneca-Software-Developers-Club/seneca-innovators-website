@@ -13,7 +13,7 @@ const CaseCompBanner: React.FC = () => {
     minutes: 0,
   });
 
-  const endDate = new Date("2024-10-01T04:00:00Z");
+  const endDate = new Date("2024-10-23T16:00:00Z");
 
   const calculateTimeRemaining = () => {
     const now = new Date();
@@ -99,20 +99,20 @@ const CaseCompBanner: React.FC = () => {
           >
             Register Now
             <FiArrowRight className="ml-2 animate-pulse" />
-          </Button>*/}
+          </Button>
           <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
             disabled
-            /*onClick={() =>
+            onClick={() =>
               window.open(
                 "https://forms.office.com/r/DgCQWtMKgh",
                 "_blank",
                 "noopener,noreferrer"
               )
-            }*/
+            }
           >
-            Round 1 Submission (Unavailable)
+            Round 1 Submission
             <FiArrowRight className="ml-2 animate-pulse" />
           </Button>
           <Button
@@ -124,7 +124,7 @@ const CaseCompBanner: React.FC = () => {
           >
             Download Case
             <FiArrowRight className="ml-2 animate-pulse" />
-          </Button>
+          </Button>*/}
         </div>
       </div>
     </div>
