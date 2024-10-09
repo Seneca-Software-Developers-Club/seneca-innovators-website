@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ITimeRemaining } from "@/app/interfaces";
-import { Button } from "@nextui-org/react";
-import { FiArrowRight } from "react-icons/fi";
+//import { Button } from "@nextui-org/react";
+//import { FiArrowRight } from "react-icons/fi";
 
 const CaseCompBanner: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState<ITimeRemaining>({
