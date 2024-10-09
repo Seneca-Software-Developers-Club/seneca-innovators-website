@@ -28,7 +28,7 @@ const CaseCompBanner: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(calculateTimeRemaining, 1000);
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   return (
     <div className="font-sans relative h-screen flex flex-col items-center justify-center text-white px-4 md:px-16">
