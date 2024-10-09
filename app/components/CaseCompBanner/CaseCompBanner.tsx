@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ITimeRemaining } from "@/app/interfaces";
-import { Button } from "@nextui-org/react";
-import { FiArrowRight } from "react-icons/fi";
+//import { Button } from "@nextui-org/react";
+//import { FiArrowRight } from "react-icons/fi";
 
 const CaseCompBanner: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState<ITimeRemaining>({
@@ -13,7 +13,7 @@ const CaseCompBanner: React.FC = () => {
     minutes: 0,
   });
 
-  const endDate = new Date("2024-10-01T04:00:00Z");
+  const endDate = new Date("2024-10-23T16:00:00Z");
 
   const calculateTimeRemaining = () => {
     const now = new Date();
@@ -28,7 +28,7 @@ const CaseCompBanner: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(calculateTimeRemaining, 1000);
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   return (
     <div className="font-sans relative h-screen flex flex-col items-center justify-center text-white px-4 md:px-16">
@@ -99,10 +99,11 @@ const CaseCompBanner: React.FC = () => {
           >
             Register Now
             <FiArrowRight className="ml-2 animate-pulse" />
-          </Button>*/}
+          </Button>
           <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
+            disabled
             onClick={() =>
               window.open(
                 "https://forms.office.com/r/DgCQWtMKgh",
@@ -123,7 +124,7 @@ const CaseCompBanner: React.FC = () => {
           >
             Download Case
             <FiArrowRight className="ml-2 animate-pulse" />
-          </Button>
+          </Button>*/}
         </div>
       </div>
     </div>
