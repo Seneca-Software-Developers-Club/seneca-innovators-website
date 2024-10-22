@@ -19,6 +19,11 @@ const Sponsors: React.FC = () => {
           alt="Seneca Helix"
           href="https://www.senecapolytechnic.ca/innovation/helix.html"
         />
+        <SponsorCard
+          src="/media/senecaAlumni.png"
+          alt="Seneca Alumni"
+          href="https://www.senecapolytechnic.ca/alumni.html"
+        />
       </div>
     </div>
   );

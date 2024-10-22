@@ -72,7 +72,7 @@ const FAQ: React.FC = () => {
             {/* Changed to items-start */}
             {faqs.map((faq, index) => (
               <div
-                key={index}
+                key={faq.question + index}
                 className="collapse collapse-plus"
                 style={{
                   backgroundColor: "#1c1c1e",
