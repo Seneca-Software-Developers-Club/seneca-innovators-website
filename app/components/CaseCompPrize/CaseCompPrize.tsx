@@ -19,13 +19,13 @@ const CaseCompPrize: React.FC = () => {
         className="bg-[#b52828] hover:bg-[#E63946] text-white font-semibold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
         onClick={() =>
           window.open(
-            "https://forms.office.com/r/DgCQWtMKgh",
+            "https://ca.cglink.me/2uc/r377381", // https://forms.office.com/r/DgCQWtMKgh
             "_blank",
             "noopener,noreferrer"
           )
         }
       >
-        Join Now
+        Register for Finals
       </button>
     </div>
   );
