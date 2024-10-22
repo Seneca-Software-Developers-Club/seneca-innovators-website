@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ITimeRemaining } from "@/app/interfaces";
-//import { Button } from "@nextui-org/react";
-//import { FiArrowRight } from "react-icons/fi";
+import { Button } from "@nextui-org/react";
+import { FiArrowRight } from "react-icons/fi";
 
 const CaseCompBanner: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState<ITimeRemaining>({
@@ -86,12 +86,12 @@ const CaseCompBanner: React.FC = () => {
         </div>
 
         <div className="flex flex-col md:w-2/6">
-          {/*<Button
+          <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#9E2424] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"
             onClick={() =>
               window.open(
-                "",
+                "https://ca.cglink.me/2uc/r377381",
                 "_blank",
                 "noopener,noreferrer"
               )
@@ -100,6 +100,7 @@ const CaseCompBanner: React.FC = () => {
             Register Now
             <FiArrowRight className="ml-2 animate-pulse" />
           </Button>
+          {/*
           <Button
             className="flex items-center mx-2 py-4 mb-2 bg-[#E63946] text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             size="lg"

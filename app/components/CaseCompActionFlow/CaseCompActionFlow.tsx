@@ -46,7 +46,7 @@ const timelineSteps = [
     description: [
       "1) For Round 2, Create a presentation deck (PowerPoint, Google Slides, etc.).",
       "2) Follow format requirements and ensure for a 10-15 minute presentation (length may be updated).",
-      "3) <a target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> (Link Currently Unavailable) to attend the conference.",
+      "3) <a href='https://ca.cglink.me/2uc/r377381' target='_blank' rel='noopener noreferrer' class='underline text-[#E63946] font-bold'>Register here</a> to attend the conference.",
       "Note: Only the final 4 teams will make it through to this stage.",
     ],
     label: "Submission Deadline",
@@ -87,7 +87,7 @@ const CaseCompActionFlow: React.FC = () => {
           <div className="space-y-12">
             {timelineSteps.map((step, index) => (
               <div
-                key={index}
+                key={step.title + index}
                 className={`flex flex-col md:flex-row items-center md:justify-between ${
                   index % 2 === 0 ? "md:flex-row-reverse" : ""
                 }`}
@@ -104,7 +104,7 @@ const CaseCompActionFlow: React.FC = () => {
                       {step.description.map((text, index) => (
                         <>
                           <span
-                            key={index}
+                            key={text + index}
                             dangerouslySetInnerHTML={{ __html: text }}
                           />
                           <br />
