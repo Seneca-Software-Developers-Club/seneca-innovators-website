@@ -73,9 +73,14 @@ const Footer: React.FC = () => {
           >
             Srushti Patel
           </a>
-          <p className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-            Abdul Muhsin
-          </p>
+          <a
+            href="https://www.linkedin.com/in/abdulmuhsin-baksh-426065274/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Abdulmuhsin Baksh
+          </a>
           <a
             href="https://www.linkedin.com/in/raghav-jha-b75230256/"
             target="_blank"
