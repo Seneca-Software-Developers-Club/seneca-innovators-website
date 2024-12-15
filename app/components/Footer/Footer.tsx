@@ -31,6 +31,69 @@ const Footer: React.FC = () => {
           <p className="text-sm">All rights reserved</p>
         </div>
 
+        <div className="mb-8 lg:mb-0 text-center">
+          <p>Contributors:</p>
+          {/*
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 inline-block"
+          ></a>
+          */}
+          <a
+            href="https://www.linkedin.com/in/shreybhatt13/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Shrey Bhatt
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aryank1511/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Aryan Khurana
+          </a>
+          <a
+            href="https://www.linkedin.com/in/harshpatel258/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Harsh Patel
+          </a>
+          <a
+            href="https://www.linkedin.com/in/srushti-patel-213719201/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Srushti Patel
+          </a>
+          <p className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
+            Abdul Muhsin
+          </p>
+          <a
+            href="https://www.linkedin.com/in/raghav-jha-b75230256/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Raghav Jha
+          </a>
+          <a
+            href="https://www.linkedin.com/in/neelvirenpatel/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-all duration-300 ease-in-out transform hover:scale-105 block"
+          >
+            Neel Patel
+          </a>
+        </div>
+
         <div className="flex flex-col items-center lg:items-end">
           {/* <div className="flex justify-center lg:justify-end space-x-4 mb-4">
             <SocialIcon
